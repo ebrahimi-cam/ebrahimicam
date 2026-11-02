@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> کافی نت آنلاین ابراهیمی | Ebrahimi.cam</title>
+    
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+                    colors: { darkBg: '#0f172a', cardBg: '#1e293b', cardHover: '#334155' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans min-h-screen">
+
+    <!-- هدر سایت -->
+    <header class="bg-cardBg shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-4">
+            <h1 class="text-xl font-bold text-white">کافی نت آنلاین ابراهیمی</h1>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition">
+                <i class="fa-solid fa-headset ml-1"></i> پشتیبانی
+            </button>
+            <div class="flex items-center gap-2 cursor-pointer">
+                <span class="text-sm font-medium">ابراهیمی</span>
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex justify-center items-center text-white">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- نوار جستجو -->
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="relative w-full max-w-2xl mx-auto">
+            <input type="text" placeholder="جستجوی خدمات (مثلاً استعلام سند خودرو)..." 
+                   class="w-full bg-cardBg border border-gray-700 text-gray-200 rounded-xl py-3 px-12 focus:outline-none focus:border-blue-500 transition shadow-sm text-sm">
+            <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+    </div>
+
+    <!-- بخش اصلی (کارت‌های خدمات) -->
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <div class="flex items-center gap-2 mb-6">
+            <div class="w-1.5 h-6 bg-blue-500 rounded-full"></div>
+            <h2 class="text-lg font-bold text-white">خدمات پرکاربرد</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- کارت 1 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex justify-center items-center text-purple-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2 py-1 rounded-md">فعال</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">خدمات قضایی</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، استعلام و پیگیری پرونده‌های قضایی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 2 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex justify-center items-center text-emerald-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">استعلام سند خودرو</h3>
+                <p class="text-xs text-gray-400 mb-6">دریافت خلافی، سند و وضعیت خودرو</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 3 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex justify-center items-center text-blue-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">خدمات بیمه</h3>
+                <p class="text-xs text-gray-400 mb-6">استعلام بیمه، صدور و تمدید بیمه‌نامه</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 4 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex justify-center items-center text-orange-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت نام آزمون‌ها</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام در کنکور، استخدامی و آزمون‌های دولتی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 5 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex justify-center items-center text-rose-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">استعلام سند ملک</h3>
+                <p class="text-xs text-gray-400 mb-6">استعلام وضعیت ملک، سند و پایان کار</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 6 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex justify-center items-center text-teal-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">خدمات آموزش و پرورش</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام مدارس، کارنامه و امور دانش‌آموزی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 7 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex justify-center items-center text-indigo-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">امور بانکی</h3>
+                <p class="text-xs text-gray-400 mb-6">افتتاح حساب، پیگیری وام و خدمات بانکی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 8 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-xl flex justify-center items-center text-red-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-passport"></i>
+                    </div>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت احوال</h3>
+                <p class="text-xs text-gray-400 mb-6">تعویض شناسنامه، کارت ملی و امور هویتی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 10 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex justify-center items-center text-cyan-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-umbrella"></i>
+                    </div>
+                    <span class="bg-orange-500/10 text-orange-400 text-xs px-2 py-1 rounded-md">تخفیف ویژه</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">صدور انواع بیمه نامه</h3>
+                <p class="text-xs text-gray-400 mb-6">بیمه شخص ثالث، بدنه، عمر، آتش‌سوزی و درمان</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 11 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-orange-600/20 rounded-xl flex justify-center items-center text-orange-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <span class="bg-purple-500/10 text-purple-400 text-xs px-2 py-1 rounded-md">پرفروش</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">خرید لاستیک دولتی کویر</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام در سامانه تایر، رزرو و پیگیری لاستیک کویر</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 12 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex justify-center items-center text-blue-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded-md">ضروری</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">افتتاح حساب مهر</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام بانک ملی، دریافت یارانه و وام‌های دولتی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 13 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex justify-center items-center text-teal-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </div>
+                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2 py-1 rounded-md">تسهیلات</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">تشکیل پرونده مهر</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام و تشکیل پرونده جهت دریافت وام و تسهیلات</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 14 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex justify-center items-center text-amber-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2 py-1 rounded-md">مالی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">خرید و فروش وام</h3>
+                <p class="text-xs text-gray-400 mb-6">خرید، فروش، انتقال و پیگیری انواع وام‌های بانکی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 15 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-red-600/20 rounded-xl flex justify-center items-center text-red-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded-md">پرداخت قبوض</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">بیمه تامین اجتماعی</h3>
+                <p class="text-xs text-gray-400 mb-6">پرداخت حق بیمه، استعلام سابقه و امور بازنشستگی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 16 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-lime-500/20 rounded-xl flex justify-center items-center text-lime-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <span class="bg-lime-500/10 text-lime-400 text-xs px-2 py-1 rounded-md">سلامت</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">پرداخت بیمه ورزشی</h3>
+                <p class="text-xs text-gray-400 mb-6">تمدید و پرداخت بیمه ورزشی فدراسیون پزشکی ورزشی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 17 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex justify-center items-center text-sky-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                    </div>
+                    <span class="bg-sky-500/10 text-sky-400 text-xs px-2 py-1 rounded-md">انتظامی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">سامانه سخا</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، احراز کد پستی، گذرنامه زیارتی و امور نظام وظیفه</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 18 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex justify-center items-center text-indigo-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2 py-1 rounded-md">قضایی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">سامانه ثنا</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، احراز هویت و مشاهده ابلاغیه‌های الکترونیک قضایی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 19 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex justify-center items-center text-pink-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <span class="bg-pink-500/10 text-pink-400 text-xs px-2 py-1 rounded-md">مدارس</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت نام کتاب درسی</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت سفارش، پرداخت و پیگیری کتب درسی دانش‌آموزان</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 20 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex justify-center items-center text-blue-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded-md">دانش‌آموزی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">خدمات مای مدیو</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام مدارس، دریافت کارنامه، انتقالی و امور دانش‌آموزی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 21 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex justify-center items-center text-emerald-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2 py-1 rounded-md">پرتقاضا</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت نام خودرو</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام اولیه، شماره‌گذاری، دریافت پلاک و انتقال سند</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 22 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-xl flex justify-center items-center text-red-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-traffic-light"></i>
+                    </div>
+                    <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded-md">پرمراجعه</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">تعویض پلاک، خلافی و عوارض</h3>
+                <p class="text-xs text-gray-400 mb-6">استعلام خلافی، پرداخت عوارض آزادراه و نوبت‌گیری تعویض پلاک</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 23 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex justify-center items-center text-amber-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2 py-1 rounded-md">حقوقی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">گواهی انحصار وراثت</h3>
+                <p class="text-xs text-gray-400 mb-6">درخواست صدور، پیگیری و دریافت گواهی انحصار وراثت</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 24 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex justify-center items-center text-teal-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <span class="bg-teal-500/10 text-teal-400 text-xs px-2 py-1 rounded-md">قضایی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">گواهی عدم سوء پیشینه</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت درخواست، پیگیری و دریافت گواهی عدم سوء رفتار</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 25 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-800/30 rounded-xl flex justify-center items-center text-blue-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded-md">ابلاغیه</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">خدمات عدل ایران (ابلاغیه)</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، مشاهده و پیگیری ابلاغیه‌های الکترونیک قضایی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 26 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-slate-500/20 rounded-xl flex justify-center items-center text-slate-300 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <span class="bg-slate-500/10 text-slate-300 text-xs px-2 py-1 rounded-md">بازنشستگی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">فیش و حکم بازنشستگان</h3>
+                <p class="text-xs text-gray-400 mb-6">دریافت فیش حقوقی، حکم بازنشستگی و پیگیری امور pension</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 27 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex justify-center items-center text-yellow-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <span class="bg-yellow-500/10 text-yellow-500 text-xs px-2 py-1 rounded-md">تسهیلات</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">وام بازنشستگان</h3>
+                <p class="text-xs text-gray-400 mb-6">پیگیری وام تامین اجتماعی، کشوری و لشکری</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 28 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-emerald-600/20 rounded-xl flex justify-center items-center text-emerald-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2 py-1 rounded-md">مسکن</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">سامانه املاک و اسکان</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت اطلاعات سکونت، املاک و پیگیری مالیات خانه‌های خالی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 29 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-yellow-600/20 rounded-xl flex justify-center items-center text-yellow-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </div>
+                    <span class="bg-yellow-500/10 text-yellow-400 text-xs px-2 py-1 rounded-md">سوخت</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت سوخت گازوئیل</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام سامانه سدف، تخصیص و پیگیری سوخت گازوئیل</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 30 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-xl flex justify-center items-center text-red-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded-md">سوخت</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت کارت سوخت</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، پیگیری و صدور المثنی کارت سوخت خودرو</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 31 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-xl flex justify-center items-center text-purple-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <span class="bg-purple-500/10 text-purple-400 text-xs px-2 py-1 rounded-md">ارز دیجیتال</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">حساب راکت</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، احراز هویت و شارژ حساب صرافی راکت</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 32 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-teal-600/20 rounded-xl flex justify-center items-center text-teal-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+                    <span class="bg-teal-500/10 text-teal-400 text-xs px-2 py-1 rounded-md">یارانه</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">جداسازی یارانه</h3>
+                <p class="text-xs text-gray-400 mb-6">جداسازی یارانه سرپرست خانوار، ثبت اعتراض و پیگیری وضعیت</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 33 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-red-600/20 rounded-xl flex justify-center items-center text-red-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded-md">یارانه</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">اعتراض به یارانه</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت اعتراض، پیگیری دهک‌بندی و بازگشت یارانه</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 34 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-orange-700/20 rounded-xl flex justify-center items-center text-orange-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span class="bg-orange-500/10 text-orange-400 text-xs px-2 py-1 rounded-md">مشاغل</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت مجوز مشاغل خانگی</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت نام، پیگیری و صدور مجوز مشاغل خانگی</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 35 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-indigo-600/20 rounded-xl flex justify-center items-center text-indigo-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2 py-1 rounded-md">روزمره</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">پرداخت قبوض</h3>
+                <p class="text-xs text-gray-400 mb-6">پرداخت قبض برق، آب، گاز، تلفن ثابت و همراه</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 36 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-900/30 rounded-xl flex justify-center items-center text-blue-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-car-burst"></i>
+                    </div>
+                    <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded-md">پلیس ۱۱۰</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">کروکی تصادف آنلاین</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت کروکی تصادف، پیگیری خسارت و پرونده بیمه</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 37 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-700/20 rounded-xl flex justify-center items-center text-blue-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-barcode"></i>
+                    </div>
+                    <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded-md">بیمه ایران</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">کد رهگیری بیمه ایران</h3>
+                <p class="text-xs text-gray-400 mb-6">استعلام، پیگیری بیمه‌نامه و خسارت بیمه ایران</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 38 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-slate-600/20 rounded-xl flex justify-center items-center text-slate-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <span class="bg-slate-500/10 text-slate-300 text-xs px-2 py-1 rounded-md">انتظامی</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">پلیس اماکن</h3>
+                <p class="text-xs text-gray-400 mb-6">استعلام جواز کسب، پروانه اماکن و ثبت شکایات</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 39 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-orange-600/20 rounded-xl flex justify-center items-center text-orange-500 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <span class="bg-orange-500/10 text-orange-400 text-xs px-2 py-1 rounded-md">شکایات</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">ثبت شکایت آنلاین</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت شکایت از اصناف، ادارات و پیگیری آنلاین</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- کارت 40 -->
+            <div class="bg-cardBg border border-gray-700 rounded-2xl p-5 hover:bg-cardHover hover:border-gray-500 transition duration-300 group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-xl flex justify-center items-center text-purple-400 text-xl group-hover:scale-110 transition">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <span class="bg-purple-500/10 text-purple-400 text-xs px-2 py-1 rounded-md">مالیات</span>
+                </div>
+                <h3 class="font-bold text-white mb-2">اظهارنامه مالیاتی</h3>
+                <p class="text-xs text-gray-400 mb-6">ثبت، ارسال و پیگیری اظهارنامه مالیاتی مشاغل</p>
+                <div class="flex justify-end mt-auto">
+                    <a href="order.html" class="text-sm text-gray-300 flex items-center gap-1 group-hover:text-blue-400 transition">
+                        مشاهده <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

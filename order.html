@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت سفارش | کافی  نت آنلاین ابراهیمی  </title>
+    
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+                    colors: { darkBg: '#0f172a', cardBg: '#1e293b', cardHover: '#334155' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-cardBg shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="text-gray-400 hover:text-white transition">
+                <i class="fa-solid fa-arrow-right text-xl"></i>
+            </a>
+            <h1 class="text-xl font-bold text-white">ثبت سفارش جدید</h1>
+        </div>
+        <div class="text-sm text-gray-400">کافی نت آنلاین ابراهیمی</div>
+    </header>
+
+    <main class="flex-grow flex justify-center items-center py-10 px-4">
+        <div class="bg-cardBg border border-gray-700 rounded-2xl w-full max-w-2xl p-8 shadow-lg">
+            
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-blue-500/20 rounded-full flex justify-center items-center text-blue-400 text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-2">فرم درخواست خدمات</h2>
+                <p class="text-sm text-gray-400">لطفاً اطلاعات خود را وارد کنید تا همکاران ما با شما تماس بگیرند.</p>
+            </div>
+
+            <!-- ⚠️ فقط ایمیل خودت رو در action بنویس ⚠️ -->
+            <form action="https://formsubmit.co/dc1b6d1f9baa5304bf20128b3ada9594" method="POST" class="space-y-6">
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="سفارش جدید از کافی نت ابراهیمی">
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">نام و نام خانوادگی <span class="text-red-500">*</span></label>
+                    <input type="text" name="نام_مشتری" required placeholder="مثلاً: علی محمدی" 
+                           class="w-full bg-darkBg border border-gray-600 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-blue-500 transition text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">شماره موبایل <span class="text-red-500">*</span></label>
+                        <input type="tel" name="شماره_تماس" required placeholder="۰۹۱۲..." 
+                               class="w-full bg-darkBg border border-gray-600 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-blue-500 transition text-sm text-left" dir="ltr">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">کد ملی <span class="text-red-500">*</span></label>
+                        <input type="text" name="کد_ملی" required placeholder="۱۰ رقم" 
+                               class="w-full bg-darkBg border border-gray-600 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-blue-500 transition text-sm text-left" dir="ltr">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">نوع خدمت درخواستی <span class="text-red-500">*</span></label>
+                    <select name="نوع_خدمت" required class="w-full bg-darkBg border border-gray-600 text-gray-300 rounded-xl py-3 px-4 focus:outline-none focus:border-blue-500 transition text-sm appearance-none cursor-pointer">
+                        <option value="" disabled selected>یک خدمت را انتخاب کنید...</option>
+                        <option value="ghazai">خدمات قضایی</option>
+                        <option value="khodro">استعلام سند خودرو</option>
+                        <option value="bime">خدمات بیمه</option>
+                        <option value="azmoon">ثبت نام آزمون‌ها</option>
+                        <option value="melk">استعلام سند ملک</option>
+                        <option value="amoozesh">خدمات آموزش و پرورش</option>
+                        <option value="banki">امور بانکی</option>
+                        <option value="shenasname">ثبت احوال</option>
+                        <option value="sabt_khodro">ثبت نام خودرو و ثنا</option>
+                        <option value="sodoor_bime">صدور انواع بیمه نامه</option>
+                        <option value="tayer">خرید لاستیک دولتی کویر</option>
+                        <option value="mehr_hesab">افتتاح حساب مهر</option>
+                        <option value="mehr_parvande">تشکیل پرونده مهر</option>
+                        <option value="kharid_vam">خرید و فروش وام</option>
+                        <option value="tamin">پرداخت بیمه تامین اجتماعی</option>
+                        <option value="varzeshi">پرداخت بیمه ورزشی</option>
+                        <option value="sakha">سامانه سخا</option>
+                        <option value="sana">سامانه ثنا</option>
+                        <option value="ketab">ثبت نام کتاب درسی</option>
+                        <option value="mymedu">خدمات مای مدیو (MyMedu)</option>
+                        <option value="sabt_khodro_joda">ثبت نام خودرو (اختصاصی)</option>
+                        <option value="khalafi">تعویض پلاک، خلافی و عوارض</option>
+                        <option value="varasat">گواهی انحصار وراثت</option>
+                        <option value="soe_pishine">گواهی عدم سوء پیشینه</option>
+                        <option value="adl_iran">خدمات عدل ایران (ابلاغیه)</option>
+                        <option value="bazneshaste">فیش و حکم بازنشستگان</option>
+                        <option value="vam_bazneshaste">وام بازنشستگان</option>
+                        <option value="amlak_eskan">سامانه املاک و اسکان</option>
+                        <option value="gazoil">ثبت سوخت گازوئیل</option>
+                        <option value="kart_sokht">ثبت کارت سوخت</option>
+                        <option value="rocket">حساب راکت</option>
+                        <option value="jodasazi_yaraneh">جداسازی یارانه</option>
+                        <option value="etraz_yaraneh">اعتراض به یارانه</option>
+                        <option value="moshaghel_khanegi">ثبت مجوز مشاغل خانگی</option>
+                        <option value="pardakht_ghabz">پرداخت قبوض</option>
+                        <option value="kroki_tasadof">کروکی تصادف آنلاین</option>
+                        <option value="rehگیری_bime_iran">کد رهگیری بیمه ایران</option>
+                        <option value="police_amaken">پلیس اماکن</option>
+                        <option value="shekayat">ثبت شکایت آنلاین</option>
+                        <option value="ezharename_maliyati">اظهارنامه مالیاتی</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">توضیحات تکمیلی</label>
+                    <textarea name="توضیحات" rows="3" placeholder="اگر نیاز به توضیح خاصی دارید اینجا بنویسید..." 
+                              class="w-full bg-darkBg border border-gray-600 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-blue-500 transition text-sm resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition duration-300 flex justify-center items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-paper-plane"></i> ثبت نهایی سفارش
+                </button>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+</html>
